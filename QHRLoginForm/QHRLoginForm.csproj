@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EECD84C3-EF43-40B4-AAF8-47987629AB78}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QHRLoginForm</RootNamespace>
+    <AssemblyName>QHRLoginForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\QHRServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.DocumentManagementForCPD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.DocumentTemplateForCPD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.HRASurveyBlank.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyAdmin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyAdminCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyAllergen.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyAllergenCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyAnswer.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyAnswerCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyBasicHRA.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyBasicHRACollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyBasicSurvey.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyBasicSurveyCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyBasicTemplateCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyBasicVitalsLabItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyBasicVitalsLabItemCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyCareDashboardMenuCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyClinic.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyClinicCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyCoupon.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyCouponCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyDDLCategory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyDDLCategoryCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyDDLItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyDDLItemCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyDocumentFile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyDocumentStructure.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyDocumentStructureCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyDocumentTemplateQACollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyHRAResponseCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyLogin.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyLoginCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyLoincCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyMedicalDictionaryCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyMedicationDetail.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyMedicationDetailCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyMedicineDictionary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyMessage.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyMessageCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyMrconso.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyMrconsoCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyNetworkCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyNPIDataCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyNPIProvider.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyNPIProviderCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyOperateLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatient.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientAllergie.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientAllergieCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientLabResults.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientLabResultsCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientReferral.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientReferralCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientRiskFactors.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientRiskFactorsCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientSurveyRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientSurveyRequestCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientSurveyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientSurveyResponseCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientTask.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientTaskCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientVitalSigns.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientVitalSignsCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPatientVitalsLabItem.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPermissionCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPharmacy.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPharmacyCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPractitioner.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPractitionerCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPractitionerSurveyRequest.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPractitionerSurveyRequestCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPractitionerSurveyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPractitionerSurveyResponseCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyPrivilegeCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyQhrConfig.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyQhrConfigColleciton.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyQuestion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyQuestionCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyRefNetworkCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MySecurityObjectCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyStaff.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyStaffCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MySubQuestionCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyTeleEncounter.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyTeleEncounterCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyUserCategory.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyUserCategoryCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyUserRole.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyUserRoleCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyVisitLog.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.MyVisitLogCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.OperateLogAssistant.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.OperateLogAssistantCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.PatientConditionAssistant.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.PatientConditionAssistantCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.PatientConditionInDictionary.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.PatientConditionInDictionaryCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.PatientSuitDiagnosisCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.PatientSurveyForCPD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.PractitionerSurveyForCPD.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.RoleMenu.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.SecurityObjectAssistantCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QHRLoginForm.QHRServiceReference.SurveyHeadCollection.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\QHRServiceReference\QhrService.wsdl" />
+    <None Include="Service References\QHRServiceReference\QhrService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QHRServiceReference\QhrService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QHRServiceReference\QhrService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QHRServiceReference\QhrService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\QHRServiceReference\QhrService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\QHRServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\QHRServiceReference\QhrService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\QHRServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\QHRServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\QHRServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

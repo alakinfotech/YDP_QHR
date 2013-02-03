@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/QhrServiceProject.QhrEnum" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/QhrServiceProject.QhrEnum" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="BasicProtocolAdultOrChild">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Child" />
+      <xs:enumeration value="Adult" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="BasicProtocolAdultOrChild" nillable="true" type="tns:BasicProtocolAdultOrChild" />
+  <xs:simpleType name="ConditionStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Inactive" />
+      <xs:enumeration value="Active" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ConditionStatus" nillable="true" type="tns:ConditionStatus" />
+  <xs:simpleType name="NetworkStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotEnrolled" />
+      <xs:enumeration value="Enrolled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="NetworkStatus" nillable="true" type="tns:NetworkStatus" />
+  <xs:simpleType name="NetworkAddedIntoMyReferralNetwork">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="No" />
+      <xs:enumeration value="Yes" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="NetworkAddedIntoMyReferralNetwork" nillable="true" type="tns:NetworkAddedIntoMyReferralNetwork" />
+  <xs:simpleType name="IfDeleted">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotDeleted" />
+      <xs:enumeration value="Deleted" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="IfDeleted" nillable="true" type="tns:IfDeleted" />
+  <xs:simpleType name="ActiveStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="InActive" />
+      <xs:enumeration value="Active" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ActiveStatus" nillable="true" type="tns:ActiveStatus" />
+</xs:schema>

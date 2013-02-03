@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8081/QhrService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" />
+  <xs:complexType name="ArrayOfstring">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring" />
+  <xs:complexType name="ArrayOfKeyValueOfstringArrayOfMyPatientProtocolItemG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringArrayOfMyPatientProtocolItemG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q1:ArrayOfMyPatientProtocolItem" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringArrayOfMyPatientProtocolItemG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringArrayOfMyPatientProtocolItemG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringArrayOfMyBasicProtocolStructureG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringArrayOfMyBasicProtocolStructureG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q2:ArrayOfMyBasicProtocolStructure" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringArrayOfMyBasicProtocolStructureG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringArrayOfMyBasicProtocolStructureG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringlong">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringlong">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element name="Value" type="xs:long" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringlong" nillable="true" type="tns:ArrayOfKeyValueOfstringlong" />
+  <xs:complexType name="ArrayOfKeyValueOfstringfloat">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringfloat">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element name="Value" type="xs:float" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringfloat" nillable="true" type="tns:ArrayOfKeyValueOfstringfloat" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyQuestionCollectionG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyQuestionCollectionG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q3:MyQuestionCollection" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyQuestionCollectionG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyQuestionCollectionG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyDocumentStructureCollectionG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyDocumentStructureCollectionG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q4:MyDocumentStructureCollection" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyDocumentStructureCollectionG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyDocumentStructureCollectionG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyDocumentFileCollectionG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyDocumentFileCollectionG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q5:MyDocumentFileCollection" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyDocumentFileCollectionG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyDocumentFileCollectionG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyDocumentTemplateCollectionG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyDocumentTemplateCollectionG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q6:MyDocumentTemplateCollection" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyDocumentTemplateCollectionG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyDocumentTemplateCollectionG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyBasicTemplateG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyBasicTemplateG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q7:MyBasicTemplate" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyBasicTemplateG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyBasicTemplateG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyAnswerCollectionG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyAnswerCollectionG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q8:MyAnswerCollection" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyAnswerCollectionG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyAnswerCollectionG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyDocumentTemplateQAG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyDocumentTemplateQAG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q9:MyDocumentTemplateQA" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyDocumentTemplateQAG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyDocumentTemplateQAG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyQuestionG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyQuestionG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q10:MyQuestion" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyQuestionG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyQuestionG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyPatientSurveyResponseG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyPatientSurveyResponseG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q11:MyPatientSurveyResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyPatientSurveyResponseG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyPatientSurveyResponseG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringMyPractitionerSurveyResponseG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringMyPractitionerSurveyResponseG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q12:MyPractitionerSurveyResponse" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringMyPractitionerSurveyResponseG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringMyPractitionerSurveyResponseG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfKeyValueOfstringArrayOfMyAllergenG2Dcc_PNW">
+    <xs:annotation>
+      <xs:appinfo>
+        <IsDictionary xmlns="http://schemas.microsoft.com/2003/10/Serialization/">true</IsDictionary>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="KeyValueOfstringArrayOfMyAllergenG2Dcc_PNW">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Key" nillable="true" type="xs:string" />
+            <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/QhrServiceProject.MyEntity" name="Value" nillable="true" type="q13:ArrayOfMyAllergen" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfKeyValueOfstringArrayOfMyAllergenG2Dcc_PNW" nillable="true" type="tns:ArrayOfKeyValueOfstringArrayOfMyAllergenG2Dcc_PNW" />
+  <xs:complexType name="ArrayOfanyType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="anyType" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfanyType" nillable="true" type="tns:ArrayOfanyType" />
+</xs:schema>
